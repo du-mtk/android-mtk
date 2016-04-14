@@ -207,7 +207,6 @@
  <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
  <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
  <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
- <project path="external/sepolicy" name="android_external_sepolicy-mtk" remote="du-mtk" revision="m" groups="pdk" />
  <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
  <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
@@ -242,8 +241,6 @@
  <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
  <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
  <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
- <project path="frameworks/av" name="android_frameworks_av-mtk" remote="du-mtk" revision="m" groups="pdk" />
- <project path="frameworks/base" name="android_frameworks_base-mtk" remote="du-mtk" revision="m" groups="pdk-cw-fs" />
  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
  <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -252,7 +249,6 @@
  <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
  <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
  <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
- <project path="frameworks/native" name="android_frameworks_native-mtk" remote="du-mtk" revision="m" groups="pdk" />
  <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
  <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
  <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -377,7 +373,6 @@
  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
  <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
  <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
- <project path="system/core" name="android_system_core-mtk" remote="du-mtk" revision="m" groups="pdk" />
  <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
  <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
  <project path="system/security" name="platform/system/security" groups="pdk" />
@@ -406,19 +401,19 @@
  <project path="external/android-visualizer" name="android_external_android-visualizer" remote="du" revision="m" />
  <project path="external/DUtils" name="android_external_DUtils" remote="du" revision="m" />
  <project path="external/busybox" name="android_external_busybox" remote="du" revision="m" />
- <project path="external/sepolicy" name="android_external_sepolicy" remote="du" revision="m" />
+ <project path="external/sepolicy" name="android_external_sepolicy-mtk" remote="du-mtk" revision="m" />
  <project path="libcore" name="android_libcore" remote="du" revision="m" />
  <project path="system/bt" name="android_system_bt" remote="du" revision="m" />
- <project path="system/core" name="android_system_core" remote="du" revision="m" />
+ <project path="system/core" name="android_system_core-mtk" remote="du-mtk" revision="m" />
  <project path="system/extras" name="android_system_extras" remote="du" revision="m" />
  <project path="system/media" name="android_system_media" remote="du" revision="m" />
  <project path="system/netd" name="android_system_netd" remote="du" revision="m" />
  <project path="system/vold" name="android_system_vold" remote="du" revision="m" />
 
  <!--frameworks-->
- <project path="frameworks/av" name="android_frameworks_av" remote="du" revision="m" />
- <project path="frameworks/base" name="android_frameworks_base" remote="du" revision="m" />
- <project path="frameworks/native" name="android_frameworks_native" remote="du" revision="m" />
+ <project path="frameworks/av" name="android_frameworks_av-mtk" remote="du-mtk" revision="m" />
+ <project path="frameworks/base" name="android_frameworks_base-mtk" remote="du-mtk" revision="m" />
+ <project path="frameworks/native" name="android_frameworks_native-mtk" remote="du-mtk" revision="m" />
  <project path="frameworks/opt/cards" name="android_frameworks_opt_cards" remote="du" revision="m" />
  <project path="frameworks/opt/datetimepicker" name="android_frameworks_opt_datetimepicker" remote="du" revision="m" />
  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="du" revision="m" />
@@ -489,6 +484,6 @@
  <!-- vendor -->
  <project path="vendor/du" name="android_vendor_du" remote="du" revision="m" />
  
- <project path="device/Evercoss/A66A" name="du_device_Evercoss_A66A" remote="du-mtk" revision="m" />
- <project path="vendor/Evercoss/A66A" name="du_vendor_Evercoss_A66A" remote="du-mtk" revision="m" />
+ <project path="device/evercoss/a66a" name="du_device_evercoss_a66a" remote="du-mtk" revision="m" />
+ <project path="vendor/evercoss/a66a" name="du_vendor_evercoss_a66a" remote="du-mtk" revision="m" />
 </manifest>
