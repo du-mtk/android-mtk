@@ -12,6 +12,9 @@
  <remote  name="du"
           fetch="https://github.com/DirtyUnicorns/"
           review="gerrit.dirtyunicorns.com" />
+ 
+ <remote  name="du-mtk"
+          fetch="https://github.com/du-mtk/"
 
  <default revision="refs/tags/android-6.0.1_r30"
           remote="aosp"
@@ -23,7 +26,7 @@
  <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
  <project path="art" name="platform/art" groups="pdk" />
  <project path="bionic" name="platform/bionic" groups="pdk" />
- <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
+ <project path="bootable/recovery" name="android_bootable_recovery-mtk" remote="du-mtk" revision="m" groups="pdk" />
  <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
  <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
  <project path="developers/build" name="platform/developers/build" />
@@ -204,6 +207,7 @@
  <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
  <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
  <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
+ <project path="external/sepolicy" name="android_external_sepolicy-mtk" remote="du-mtk" revision="m" groups="pdk" />
  <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
  <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
@@ -238,6 +242,8 @@
  <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
  <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
  <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
+ <project path="frameworks/av" name="android_frameworks_av-mtk" remote="du-mtk" revision="m" groups="pdk" />
+ <project path="frameworks/base" name="android_frameworks_base-mtk" remote="du-mtk" revision="m" groups="pdk-cw-fs" />
  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
  <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -246,6 +252,7 @@
  <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
  <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
  <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
+ <project path="frameworks/native" name="android_frameworks_native-mtk" remote="du-mtk" revision="m" groups="pdk" />
  <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
  <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
  <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -370,6 +377,7 @@
  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
  <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
  <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
+ <project path="system/core" name="android_system_core-mtk" remote="du-mtk" revision="m" groups="pdk" />
  <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
  <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
  <project path="system/security" name="platform/system/security" groups="pdk" />
@@ -480,5 +488,7 @@
 
  <!-- vendor -->
  <project path="vendor/du" name="android_vendor_du" remote="du" revision="m" />
-
+ 
+ <project path="device/Evercoss/A66A" name="du_device_Evercoss_A66A" remote="du-mtk" revision="m" />
+ <project path="vendor/Evercoss/A66A" name="du_vendor_Evercoss_A66A" remote="du-mtk" revision="m" />
 </manifest>
